@@ -1,7 +1,7 @@
 import React from "react";
 import { TypographyType } from "./type";
 
-const Typography=({
+const Typography:React.FC< TypographyType>=({
   tag="p",
   text="text not provided",
   className,
@@ -10,7 +10,7 @@ const Typography=({
   aria_labelledby,
   children,
   style,
-}: TypographyType)=> {
+})=> {
   return React.createElement(
     tag,
     {
